@@ -1,0 +1,26 @@
+
+#cursor{
+    width: 55px;
+    height: 55px;
+    background-color:#ff7675;
+    border-radius: 100%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    outline: 0 solid #fab0a0d2;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-duration: .9s;
+    transition: opacity 0.4s;
+    z-index: 999;
+}
+
+
+@keyframes wave{
+    from {
+        outline-width: 2px;
+    }
+
+    60%, to{
+        outline-width: 25px;
+    }
+}
